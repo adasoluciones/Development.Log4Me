@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Log4MeConfig>
+				<Writers>
+								<ConsoleWriter Mode="On" OutPutFormat="[DateTime:dd/MM/yyyy HH:mm:ss]  [Type] [Level] [Class]  [Method] [Message] [VarName] [VarValue]  [ExceptionType]  [StackTrace]  [Data]                                                                                                                                    [Namespace]  [ThreadGUID]  [MethodGUID]  [Correlative]"
+																					OutPutSeparator=" " SkipSaveFormat="true">
+												<Includes>
+																<Include>
+																				<Method Equals="*"/>
+																</Include>
+												</Includes>
+												<Types>
+																<Type Name="Message" Level="*" Mode="On"/>
+												</Types>
+												<ConsoleTypes>
+																<ConsoleType Name="Message" Level="*" ForegroundColor="Blue"/>
+												</ConsoleTypes>
+								</ConsoleWriter>
+				</Writers>
+</Log4MeConfig>
